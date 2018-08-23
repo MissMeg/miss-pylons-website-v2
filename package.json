@@ -1,0 +1,24 @@
+{
+  "name": "miss-pylons-website",
+  "version": "1.0.0",
+  "description": "Website for Twitch streamer, Miss_Pylons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MissMeg/miss-pylons-website-v2.git"
+  },
+  "keywords": [
+    "twitch",
+    "streamer",
+    "website"
+  ],
+  "author": "Megan Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MissMeg/miss-pylons-website-v2/issues"
+  },
+  "homepage": "https://github.com/MissMeg/miss-pylons-website-v2#readme"
+}
