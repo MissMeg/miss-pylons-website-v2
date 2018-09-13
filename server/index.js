@@ -1,13 +1,27 @@
-const express = require('express');
-const routes  = require('../routes');
+'use strict';
+
+const express       = require('express');
+const routes        = require('../routes');
+const dotenv        = require('dotenv');
+const logger        = require('morgan');
+const cookieParser  = require('cookie-parser');
+
+//use dotenv
+dotenv.config({
+  silent: true,
+});
 
 //setup express app
 const app = express();
+
+//logger
+app.use(logger('combined'));
 
 //settings
 app.set('view engine', 'pug');
 app.use(express.json());
 app.use(express.urlencoded({extended: false }));
+app.use(cookieParser());
 
 //routes
 app.use('/', routes.home);
