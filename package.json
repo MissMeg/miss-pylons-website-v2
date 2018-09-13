@@ -4,6 +4,9 @@
   "description": "Website for Twitch streamer, Miss_Pylons.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "build": "./node_modules/.bin/babel index.js --out-dir public/js/",
+    "lint": "eslint . --ext .js,.jsx",
     "test": "mocha"
   },
   "repository": {
@@ -20,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/MissMeg/miss-pylons-website-v2/issues"
   },
-  "homepage": "https://github.com/MissMeg/miss-pylons-website-v2#readme"
+  "homepage": "https://github.com/MissMeg/miss-pylons-website-v2#readme",
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0"
+  }
 }
