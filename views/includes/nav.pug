@@ -1,0 +1,32 @@
+nav#homepage-nav.navbar.fixed-top.navbar-dark
+  li.navbar-brand
+    a(href="/")
+      img(src="static/img/pylon.svg" alt="Pylon Logo")
+  li.navbar-brand Miss_Pylons
+  button.navbar-toggler(
+    type="button"
+    data-toggle="collapse"
+    data-target="#pylonNavbar"
+    aria-controls="#pylonNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  )
+    span.navbar-toggler-icon
+  div#pylonNavbar.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+        a.nav-link(href="/#about-section") ABOUT
+      li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+        a.nav-link(href="/#schedule-section") SCHEDULE
+      li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+        a.nav-link(href="/#social-section") SOCIAL
+      li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+        a.nav-link(href="/#contact-section") CONTACT
+      li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+        a.nav-link(href="faq") FAQ
+      if currentUser
+        li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+          a.nav-link(href="/logout") LOGOUT
+      else
+        li.nav-item(data-toggle="collapse" data-target="#pylonNavbar")
+          a.nav-link(href="login") LOGIN

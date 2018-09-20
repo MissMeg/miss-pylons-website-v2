@@ -1,0 +1,569 @@
+/*colors
+  dark blue:  #00152f
+              0, 21, 47
+  yellow:     #ECAF04
+  light blue: #00D8D8
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+/*navbar styles */
+nav {
+  background-color: #00152f;
+}
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 2rem;
+  height: 2rem;
+}
+/*
+#homepage-nav {
+  background-color: rgba(0, 21, 47, 0.7);
+} */
+
+#pylonNavbar ul {
+  text-align: right;
+  align-items: flex-end;
+}
+
+#pylonNavbar li {
+  width: 5rem;
+}
+
+#pylonNavbar li a {
+  color: white;
+}
+
+#pylonNavbar li:hover {
+  border-bottom: 1px #00D8D8 solid;
+}
+
+/*homepage styles*/
+
+/*header*/
+#image-top {
+  position: relative;
+  width: 100%;
+}
+
+#image-top  img {
+  height: 30rem;
+  width: auto;
+}
+
+#top-text {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+
+#top-text h1 {
+  font-size: 28px;
+}
+
+/*titles*/
+.title-border {
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.title-border:after {
+  content: "";
+  display: block;
+  margin-left: 6rem;
+  width: 15%;
+  padding-top: 10px;
+  border-bottom: 2px #00D8D8 solid;
+}
+
+/*about section*/
+#about-section .img-border {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  margin: 2rem 25%;
+}
+
+#about-section h2 {
+  background-color: #00152f;
+}
+
+#about-section p {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about-section p:last-child {
+  margin-top: 2rem;
+}
+
+/*schedule-section*/
+#schedule-section .title-border:after {
+  margin-left: 4.7rem;
+}
+
+#schedule-section h2 {
+  background-color: #ECAF04;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#schedule-section .container {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+#schedule-section .col-lg {
+  margin-bottom: 2rem;
+}
+
+/*social section*/
+#social-section h2 {
+  background-color: #00152f;
+}
+
+#social-section .container {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+#social-section a {
+    text-decoration: none;
+    color: black;
+}
+
+#social-section a:hover {
+  color: #00D8D8;
+}
+
+#social-section .col-lg {
+  margin-bottom: 2rem;
+}
+
+/*contact section*/
+#contact-section .title-border:after {
+  margin-left: 5.2rem;
+}
+
+#contact-section h2 {
+  background-color: #ECAF04;
+  margin-bottom: 3rem;
+}
+
+#contact-section h3 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+#contact-section #email {
+  margin-left: 1rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+#contact-section a {
+  text-decoration: none;
+}
+
+#contact-section #email:hover {
+  color: #00D8D8;
+}
+
+#contact-section textarea {
+  width: 85%;
+  margin-left: 1rem;
+}
+
+#contact-section #faq-link {
+  text-align: justify;
+  margin: 1rem auto;
+  width: 85%;
+}
+
+#faq-link a {
+  color: #00D8D8;
+}
+
+#contact-section button {
+  background-color: #00D8D8;
+  color: white;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+#contact-section button:hover {
+  background-color: #ECAF04;
+}
+
+
+/***********************
+  MEDIA QUERIES
+************************/
+@media (min-width: 400px) {
+  #top-text {
+    left: 15%;
+  }
+
+  .title-border:after {
+    margin-left: 8.2rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 7rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 8.5rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 7.8rem;
+  }
+
+  #contact-section h3, #contact-section #email, #contact-section textarea, #contact-section button {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 479px) {
+  #top-text {
+    left: 22.5%;
+  }
+
+  .title-border:after {
+    margin-left: 10.7rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 9.7rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 10.9rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 10rem;
+  }
+}
+
+@media (min-width: 575px) {
+  #top-text {
+    left: 25%;
+  }
+
+  .title-border:after {
+    margin-left: 13.7rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 12.7rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 13.8rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 13rem;
+  }
+}
+
+@media (min-width: 649px) {
+  #top-text {
+    left: 30%;
+  }
+
+  .title-border:after {
+    margin-left: 16.2rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 15rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 16.2rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 15.5rem;
+  }
+}
+
+@media (min-width: 719px) {
+  #image-top  img {
+    height: 40rem;
+  }
+
+  .title-border:after {
+    width: 7%;
+    margin-left: 18.3rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 17rem;
+  }
+
+  #schedule-section h3 {
+    font-size: 36px;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 18.5rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 17.7rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .title-border:after {
+    margin-left: 20rem;
+  }
+
+  #about-section p {
+    width: 90%;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 18.7rem;
+  }
+
+  #schedule-section .row, #social-section .row {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 20rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 19rem;
+  }
+}
+
+@media (min-width: 849px) {
+  #top-text {
+    left: 35%;
+  }
+
+  .title-border:after {
+    margin-left: 22.3rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 21rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 22.3rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 21.7rem;
+  }
+}
+
+@media (min-width: 991px) {
+  #image-top  img {
+    height: auto;
+    width: 100%;
+  }
+
+  #top-text {
+    left: 27%;
+  }
+
+  #top-text h1 {
+    font-size: 48px;
+  }
+
+  .title-border:after {
+    margin-left: 27.3rem;
+  }
+
+  #about-section .container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 25.8rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 27rem;
+  }
+
+  #social-section .container {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  #social-section .row:first-child {
+    margin-bottom: 7rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 26.3rem;
+  }
+
+  #contact-section h3, #contact-section #email, #contact-section textarea, #contact-section button {
+    margin-left: 3.5rem;
+  }
+}
+
+@media (min-width: 1049px) {
+  #top-text {
+    left: 30%;
+  }
+
+  .title-border:after {
+    margin-left: 28.7rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 27.5rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 28.7rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 28rem;
+  }
+}
+
+@media (min-width: 1199px) {
+  .title-border:after {
+    margin-left: 33.3rem;
+    width: 5%;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 32rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 33.3rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 33rem;
+  }
+
+  #contact-section textarea {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1439px) {
+  #top-text {
+    left: 35%;
+  }
+
+  .title-border {
+    padding: 5rem 0;
+  }
+
+  .title-border:after {
+    margin-left: 41rem;
+  }
+
+  #about-section .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 40rem;
+  }
+
+  #schedule-section .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 41rem;
+  }
+
+  #social-section .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  #social-section i {
+    font-size: 48px;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 40rem;
+  }
+
+  #contact-section textarea {
+    width: 75%;
+  }
+
+  #contact-section h3, #contact-section #email, #contact-section textarea, #contact-section button, #contact-section #faq-link {
+    margin-left: 12rem;
+  }
+
+  #contact-section .container {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+  #top-text {
+    left: 37%;
+  }
+
+  .title-border {
+    padding: 7rem 0;
+  }
+
+  .title-border:after {
+    margin-left: 56rem;
+    width: 3%;
+  }
+
+  #schedule-section .title-border:after {
+    margin-left: 55rem;
+  }
+
+  #social-section .title-border:after {
+    margin-left: 56rem;
+  }
+
+  #contact-section .title-border:after {
+    margin-left: 55rem;
+  }
+
+  #contact-section textarea {
+    width: 50%;
+  }
+
+  #contact-section h3, #contact-section #email, #contact-section textarea, #contact-section button, #contact-section #faq-link {
+    margin-left: 18rem;
+  }
+}

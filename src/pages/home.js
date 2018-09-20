@@ -1,7 +1,6 @@
 //importing in the necessary items
 import React from 'react';
 import Nav from './components/nav';
-import Footer from './components/footer';
 
 //creating the page with default photos
 const Home = props => {
@@ -75,9 +74,6 @@ const Home = props => {
         </div>
         <div className="contact-section">
           <p>contact section</p>
-        </div>
-        <div className="footer-section">
-          <Footer />
         </div>
     </div>
   );

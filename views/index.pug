@@ -1,5 +1,78 @@
 extends includes/header
 
 block content
-  #app
-  script(src='static/js/bundle.js')
+  include includes/nav
+  #header-img
+    #image-top
+      img(src="static/img/tech-back.jpg" alt="PS4 Controller and Keyboard")
+      #top-text
+        h1 Miss_Pylons
+        h1 Programmer | Gamer
+  #about-section
+    h2.title-border ABOUT
+    .container
+      .row.align-items-center.justify-content-center
+        .col-lg.align-self-center
+          img.img-border(src="https://pbs.twimg.com/profile_images/939287918379593728/h8ksMeGU_400x400.jpg" alt="Miss_Pylons")
+        .col-lg.align-self-center
+          p I found Twitch in 2016 while looking for something to listen to while working on long projects. Though I was a lurker at first, I found a few welcoming communities that pulled me out of the background and into chat. I was impressed with the caring and kind strangers I found in these channels; something you wouldn't think to find on the internet, especially when you can hide behind a username.
+          p After a year of watching others stream, I decided to test it out myself. I started with a variety of topics including gaming, cooking, and programming. In November of 2018, I became a Twitch Affiliate. With a goal now to become a Twitch Partner, I am striving to become a better streamer and create a welcoming community for new programmers and avid gamers like myself.
+  #schedule-section
+    h2.title-border SCHEDULE
+    .container
+      .row.align-items-center.justify-content-center
+        .col-md.align-self-center
+          h3 M
+          p 6:30pm
+        .col-md.align-self-center
+          h3 T
+          p 6:30pm
+      .row.align-items-center.justify-content-center
+        .col-md.align-self-center
+          h3 W
+          p 6:30pm
+        .col-md.align-self-center
+          h3 TH
+          p 6:30pm
+  #social-section
+    h2.title-border SOCIAL
+    .container
+      .row.align-items-center.justify-content-center
+        .col-md.align-self-center
+          a(href="http://www.twitch.tv/miss_pylons")
+            i.fab.fa-twitch.fa-2x
+            p Twitch.tv/Miss_Pylons
+        .col-md.align-self-center
+          a(href="http://www.github.com/missmeg")
+            i.fab.fa-github.fa-2x
+            p GitHub.com/MissMeg
+        .col-md.align-self-center
+          a(href="http://www.twitter.com/miss_pylons")
+            i.fab.fa-twitter.fa-2x
+            p Twitter.com/Miss_Pylons
+      .row.align-items-center.justify-content-center
+        .col-md.align-self-center
+          a(href="http://www.instagram.com/miss_pylons")
+            i.fab.fa-instagram.fa-2x
+            p Instagram.com/Miss_Pylons
+        .col-md.align-self-center
+          a(href="https://www.youtube.com/channel/UCmTCbUM6vd0njjNQG8JKurQ")
+            i.fab.fa-youtube.fa-2x
+            p YouTube Channel (Coming Soon)
+  #contact-section
+    h2.title-border CONTACT
+    .container
+      h3 Business Email:
+      a(href="mailto:misspylonsoplenty@gmail.com")
+        p#email misspylonsoplenty@gmail.com
+      form(method="POST" action="/contact")
+        h3 Send me a message:
+        textarea(
+          cols="50"
+          rows="10"
+        )
+        p#faq-link
+          | Check out my 
+          a(href="faq") FAQ
+          |  for a possible answer as well.
+        button.btn(type="submit") Submit
