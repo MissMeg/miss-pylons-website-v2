@@ -25,6 +25,7 @@ app.use(cookieParser());
 
 //routes
 app.use('/', routes.home);
+app.use('/', routes.contact);
 
 // set our port
 app.set('port', process.env.PORT || 3000);
